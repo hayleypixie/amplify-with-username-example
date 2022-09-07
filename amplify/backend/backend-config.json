@@ -1,15 +1,13 @@
 {
   "auth": {
-    "usernamespikebc696436": {
+    "usernamespikea344e9d6": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
       "customAuth": false,
       "frontendAuthConfig": {
         "socialProviders": [],
-        "usernameAttributes": [
-          "EMAIL"
-        ],
+        "usernameAttributes": [],
         "signupAttributes": [
           "EMAIL",
           "NAME",
