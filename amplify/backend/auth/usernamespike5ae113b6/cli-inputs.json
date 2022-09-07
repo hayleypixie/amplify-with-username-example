@@ -1,0 +1,48 @@
+{
+  "version": "1",
+  "cognitoConfig": {
+    "identityPoolName": "usernamespike5ae113b6_identitypool_5ae113b6",
+    "allowUnauthenticatedIdentities": false,
+    "resourceNameTruncated": "userna5ae113b6",
+    "userPoolName": "usernamespike5ae113b6_userpool_5ae113b6",
+    "autoVerifiedAttributes": [
+      "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+      "SMS Text Message"
+    ],
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+      "email",
+      "name",
+      "preferred_username"
+    ],
+    "aliasAttributes": [],
+    "userpoolClientGenerateSecret": false,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+      "email"
+    ],
+    "userpoolClientReadAttributes": [
+      "email"
+    ],
+    "userpoolClientLambdaRole": "userna5ae113b6_userpoolclient_lambda_role",
+    "userpoolClientSetAttributes": false,
+    "sharedId": "5ae113b6",
+    "resourceName": "usernamespike5ae113b6",
+    "authSelections": "identityPoolAndUserPool",
+    "useDefault": "default",
+    "triggers": {},
+    "userPoolGroupList": [],
+    "serviceName": "Cognito",
+    "usernameCaseSensitive": false,
+    "useEnabledMfas": true
+  }
+}

@@ -10,6 +10,11 @@
       "StackName": "amplify-usernamespike-dev-92935",
       "StackId": "arn:aws:cloudformation:eu-west-2:302290960744:stack/amplify-usernamespike-dev-92935/35105980-2e87-11ed-aab1-0afbedbf43c4",
       "AmplifyAppId": "d37ocy6nwn0xni"
+    },
+    "categories": {
+      "auth": {
+        "usernamespike5ae113b6": {}
+      }
     }
   }
 }
