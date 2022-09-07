@@ -1,8 +1,12 @@
-import React from 'react';
-import { View, Text } from 'react-native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { NavigationContainer } from '@react-navigation/native';
-const Tab = createBottomTabNavigator();
+import React from 'react'
+import { View, Text } from 'react-native'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+import { NavigationContainer } from '@react-navigation/native'
+const Tab = createBottomTabNavigator()
+
+import { Amplify } from 'aws-amplify'
+import awsconfig from './src/aws-exports'
+Amplify.configure(awsconfig)
 
 function Home() {
   return (
@@ -28,5 +32,5 @@ export default function App() {
         <Tab.Screen name="Settings" component={Settings} />
       </Tab.Navigator>
     </NavigationContainer>
-  );
+  )
 }
