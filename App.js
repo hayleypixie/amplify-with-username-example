@@ -6,6 +6,7 @@ const Tab = createBottomTabNavigator()
 
 import { Amplify } from 'aws-amplify'
 import awsconfig from './src/aws-exports'
+import { withAuthenticator } from 'aws-amplify-react-native';
 Amplify.configure(awsconfig)
 
 function Home() {
@@ -24,7 +25,7 @@ function Settings() {
   )
 }
 
-export default function App() {
+function App() {
   return (
     <NavigationContainer>
       <Tab.Navigator>
@@ -34,3 +35,5 @@ export default function App() {
     </NavigationContainer>
   )
 }
+
+export default withAuthenticator(App)
