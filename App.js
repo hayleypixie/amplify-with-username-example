@@ -1,10 +1,10 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, Button, TouchableOpacity } from 'react-native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { NavigationContainer } from '@react-navigation/native'
 const Tab = createBottomTabNavigator()
 
-import { Amplify } from 'aws-amplify'
+import { Amplify, Auth } from 'aws-amplify'
 import awsconfig from './src/aws-exports'
 import { withAuthenticator } from 'aws-amplify-react-native';
 Amplify.configure(awsconfig)
@@ -13,6 +13,12 @@ function Home() {
   return (
     <View>
       <Text>Home</Text>
+
+      <TouchableOpacity onPress={() => Auth.signOut({global: true})}>
+        <Text>
+          Sign Out
+        </Text>
+      </TouchableOpacity>
     </View>
   )
 }
@@ -37,7 +43,7 @@ function App() {
 }
 
 const signUpConfig = {
-  header: 'My Customized Sign Up',
+  header: 'Sign Up',
   hideAllDefaults: true,
   defaultCountryCode: '1',
   signUpFields: [
